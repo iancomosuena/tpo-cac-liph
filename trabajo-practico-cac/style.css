@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+  
+  body {
+    background-image: url(img/bread-wallpaper.png);
+  }
+  
+  .main-content {
+    width: 80%;
+    background-color: rgb(255, 236, 196);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    padding: 25px;
+    overflow: hidden;
+  }
+  
+  /* comienza el header */
+  .header-top {
+    display: grid;
+    z-index: 9999;
+    border-bottom: 1px solid #2c1a04;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(97, 66, 25);
+    box-shadow: 0px 0px 100px rgb(46, 46, 46);
+  }
+  
+  /* comienza la imagen del logo */
+  .logo-img img {
+    display: flex;
+    width: 250px;
+    cursor: pointer;
+    align-content: center;
+  }
+  
+  /* termina la imagen del logo */
+  
+  /* navegador */
+  .nav-menu {
+    grid-column: 4/4;
+    margin-bottom: 10px;
+    align-self: end;
+  }
+  
+  .nav-menu ul li {
+    display: inline;
+    border-right: 1px solid rgb(44, 27, 5);
+  }
+  
+  .nav-menu ul li a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(255, 155, 1);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.05s;
+  }
+  
+  .nav-menu ul li a:hover {
+    border-top: solid 3px rgb(255, 208, 0);
+  }
+  
+  /* colores de la marca  
+          background-color: rgb(121, 88, 35);
+          color: #ffa600;
+          background-color: rgb(255, 233, 159);
+      */
+  
+  /* termina el header */
+  
+  /* empieza el banner */
+  
+  .banner-main {
+    margin: auto;
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+    animation: banner 10s infinite linear alternate;
+  }
+  
+  .banner-main h2 {
+    z-index: 1;
+    color: white;
+    font-size: 3em;
+    overflow: hidden;
+  }
+  
+  @keyframes banner {
+    0%,
+    25% {
+      background-image: url(img/banner.jpg);
+    }
+    25%,
+    50% {
+      background-image: url(img/banner-2.jpg);
+    }
+    50%,
+    75% {
+      background-image: url(img/banner-3.jpg);
+    }
+    75%,
+    100% {
+      background-image: url(img/banner-4.jpg);
+    }
+  }
+  
+  .capa-banner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Secciones */
+  
+  .section-type{
+    display:grid;
+    width: 90%;
+    max-height: 500px;
+    height: auto;
+    border-radius: 50px;
+    color: rgb(121, 88, 35);
+    border: 3px dashed rgb(75, 55, 25);
+    padding: 15px;
+    background-color: rgb(255, 233, 159);
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 35px;
+    transition: 0.2s ease-in-out;
+  }
+
+  
+  
+  .section-type:hover {
+    border-bottom: solid 10px green;
+    border-top: solid 10px green;
+  }
+  
+  .section-type h2 {
+    color: rgb(255, 153, 1);
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .section-opinion {
+    grid-column: 3/5;
+    display: grid;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .section-opinion h2 {
+    font-size: 30px;
+    color: rgb(255, 153, 1);
+    background-color: rgb(97, 66, 25);
+    padding: 10px 10px;
+  }
+  
+  .section-opinion .opinion {
+    float: right;
+    cursor: pointer;
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .section-opinion .opinion p {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+  }
+  
+  .section-opinion img {
+    width: 50px;
+    float: left;
+  }
+
+  .section-type-nosotros{
+    display: grid;
+    grid-column: 1/-1;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    color: rgb(121, 88, 35);
+    border: 3px dashed rgb(75, 55, 25);
+    padding: 15px;
+    background-color: rgb(255, 233, 159);
+    transition: 0.2s ease-in-out;
+  }
+
+  .section-type-nosotros:hover{
+    border-left: solid 10px green;
+    border-right: solid 10px green;
+  }
+
+  /* PAGINA PRODUCTOS */
+
+  .main-content1 {
+    width: 80%;
+    background-color: rgb(255, 236, 196);
+    margin: auto;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    padding: 25px;
+    overflow: hidden;
+  }
+
+  .section-type1{
+    margin: auto;
+    height: auto;
+    width: 800px;
+    padding: 15px;
+    margin-bottom: 35px;
+    text-align: center;
+    border-radius: 50px;
+    border: 3px dashed rgb(75, 55, 25);
+    background-color: rgb(255, 233, 159);
+    color: rgb(121, 88, 35);
+    transition: 0.2s ease-in-out;
+  }
+
+  .section-type1:hover {
+    border-bottom: solid 10px green;
+    border-top: solid 10px green;
+  }
+
+  .section-type1 h2{
+    font-size: 35px;
+    color: rgb(255,155,1);
+    margin-bottom: 30px;
+  }
+
+  .section-type1 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-type1 ul li{
+    margin-bottom: 10px;
+  }
+
+  .section-type1 ul li img{
+    width: 500px;
+    border-radius: 25px;
+  }
+
+  .iframe-map{
+    margin: auto;
+    width: 1000px;
+    height: 500px;
+  }
+  
+  /* PAGINA SUSCRIPCION */
+
+  .main-content3{
+    background-color: beige;
+    margin: auto;
+    margin-top: 100px;
+    width: 1000px;
+    border-radius: 50px;
+    padding: 30px;
+  }
+
+  .section-type3{
+    background-color: #2c1a04;
+    text-align: center;
+    padding: 30px;
+    color: rgb(63, 46, 20);
+  }
+
+  .section-type3 h2{
+    background-color: rgb(253, 192, 142);
+  }
+
+form {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffbc65;
+    border-radius: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+
+  form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .success-message {
+    color: green;
+    margin-top: 5px;
+  }
+
+  .error {
+    margin: 15px;
+    background-color: red;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+  }
+
+  .boton-suscripcion {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .boton-suscripcion:hover {
+    background-color: #45a049;
+  }
+  
+  .boton-suscripcion:active {
+    background-color: #3e8940;
+  }
+
+  
+  /* FOOTER */
+  
+  .footer-bottom {
+    background-color: rgb(97, 66, 25);
+  }
+
+  .logos-redes{
+    color: white;
+  }
+
+  .logos-redes div{
+    display: flex;
+    align-items: center;
+  }
+  
+  .logos-redes div img{
+    width: 50px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1268px) {
+    .section-opinion{
+        grid-column: 1/-1;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .banner-main{
+        width: 768px;
+        height: 200px;
+    }
+
+
+
+    .main-content{
+        width: 600px;
+        margin: auto;
+    }
+
+    .main-content1{
+        width: 500px;
+    }
+
+    .iframe-map{
+        width: 500px;
+        height: 500px;
+    }
+
+    .section-type-nosotros{
+        width: 500px;
+    }
+
+    .section-type1 ul li img{
+        width: 300px;
+
+    }
+
+    .section-type1{
+        width: 400px;
+    }
+
+    .header-top{
+        width: 768px;
+        display: flex;
+    }
+    .section-type{
+        grid-column: 1/-1;
+        width: 550px;
+    }
+
+    .section-opinion{
+        grid-column: 1/-1;
+    }
+
+    .main-content3{
+        width: 500px;
+    }
+  }

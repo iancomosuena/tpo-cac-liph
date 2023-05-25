@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/pan-logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Contactenos</title>
+    </head>
+    <body>
+         <!-- Navegador con Logo y 4 paginas -->
+        <header class="header-top">
+            <div class="logo-img"><img src="img/pan-logo.png" alt="Logo de un pan" href="index.html"></div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="suscripcion.html">Suscripcion</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content3">
+
+        <form id="mi-formulario" onsubmit="validarformulario(event)">
+            <div>
+              <label for="name">Nombre:</label>
+              <input type="text" id="name">
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="text" id="email">
+            </div>
+            <div>
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password">
+            </div>
+            <div id="mensaje"></div>
+            <div>
+              <button type="submit">Suscribirme</button>
+            </div>
+          </form>
+            </main>
+            
+            <script src="js-cac.js"></script>
+</body>
+</html>
